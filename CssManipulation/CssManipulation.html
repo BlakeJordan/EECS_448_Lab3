@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="CssManipulation.css">
+    <script>
+      function update() {
+        let paragraph = document.getElementById("dummyText");
+        let borderColor = document.getElementById("borderColor");
+        let backgroundColor = document.getElementById("backgroundColor");
+        let red1 = document.getElementById("redValue1").value;
+        let green1 = document.getElementById("greenValue1").value;
+        let blue1 = document.getElementById("blueValue1").value;
+        let width = document.getElementById("width").value;
+        let red2 = document.getElementById("redValue2").value;
+        let green2 = document.getElementById("greenValue2").value;
+        let blue2 = document.getElementById("blueValue2").value;
+        document.getElementById("dummyText").style.borderColor = "rgb("+red1+","+green1+","+blue1+")";
+        document.getElementById("dummyText").style.borderWidth = [width +"px"];
+        // paragraph.style.backgroundColor = "rgb("+red2, green2, blue2)";
+      }
+    </script>
+  </head>
+  <p id="dummyText">
+    dummy text.
+
+
+
+    This text should change colors based on input
+  <p>
+    <h2>Border Color: (0-255)</h2>
+    Red: <input type="text" id="redValue1"><br>
+    Green: <input type="text" id="greenValue1"><br>
+    Blue: <input type="text" id="blueValue1"><br>
+    Width (in px): <input type="text" id="width"><br>
+    <h2>Background Color: (0-255)</h2>
+    Red: <input type="text" id="redValue2"><br>
+    Green: <input type="text" id="greenValue2"><br>
+    Blue: <input type="text" id="blueValue2"><br>
+    <button onclick="update()">Update</button>
+</html>
