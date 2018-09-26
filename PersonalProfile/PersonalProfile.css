@@ -1,0 +1,44 @@
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 80%;
+}
+
+p
+{
+    background-color: black;
+    color: white;
+    font-family: arial;
+    font-size: 22pt;
+}
+
+h2
+{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+h1
+{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+body
+{
+    background-image: url(flames.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p:hover
+{
+    background-color: red;
+    color: blue
+}

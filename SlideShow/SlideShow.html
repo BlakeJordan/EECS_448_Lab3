@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+            let slides = ["pug.jpg","Batman.jpg","monday.jpg","llama.jpg","hidethepainharold.jpg"];
+            let slideNumber = 0;
+            let currentImage = slides[slideNumber];
+            document.getElementById("CurrentSlide");
+            //("CurrentSlide").setAttribute("src", currentImage);
+            console.log(currentImage);
+            function nextSlide() {
+                if (slideNumber == 4) {
+                    slideNumber = 0;
+                }
+                else {
+                    slideNumber++;
+                }
+                currentImage = slides[slideNumber];
+                document.getElementById("CurrentSlide").setAttribute("src", currentImage);
+            }
+
+            function prevSlide() {
+                if (slideNumber = 0) {
+                    slideNumber = 4;
+                }
+                else {
+                    slideNumber--;
+                }
+                currentImage = slides[slideNumber];
+                document.getElementById("CurrentSlide").setAttribute("src", currentImage);
+            }
+         </script>
+    </head>
+    <body>
+        <img src="Batman.jpg" id="CurrentSlide" height="400" width="800"><br>
+        <button onclick="prevSlide()">Back</button>
+        <button onclick="nextSlide()">Next</button>
+    </body>
+</html>
